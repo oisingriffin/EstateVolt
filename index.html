@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Supreme Cars Ireland</title>
+    <link rel="stylesheet" href="/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .slideshow-container {
+            max-width: 500px; /* Fixed width to maintain square aspect ratio */
+            position: relative;
+            margin: auto;
+            background: transparent;
+        }
+
+        .slideshow-section {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364) !important;
+            width: 100%; /* Ensure it spans the full width */
+            position: relative; /* Ensure correct positioning of the slideshow container */
+        }
+
+
+
+        /* Set a fixed size for the images to be square */
+        .mySlides img {
+            width: 100%; /* Take the full width of the container */
+            height: 500px; /* Height matches the width, keeping the image square */
+            object-fit: contain; /* Cover ensures the image fills the square while preserving aspect ratio */
+            background: transparent; /* Optional background to fill any empty space */
+        }
+
+        /* Base styling for carousel-caption */
+        .carousel-caption {
+            position: absolute;
+            bottom: 60px; /* Default distance from the bottom */
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        /* For tablets and smaller screens */
+        @media only screen and (max-width: 768px) {
+            .carousel-caption {
+                bottom: 60px; /* Adjust distance from the bottom */
+                padding: 8px 15px; /* Adjust padding */
+            }
+
+                .carousel-caption h3 {
+                    font-size: 14px; /* Adjust font size */
+                }
+
+                .carousel-caption p {
+                    font-size: 10px; /* Adjust font size */
+                }
+        }
+
+        /* For mobile screens */
+        @media only screen and (max-width: 480px) {
+            .carousel-caption {
+                bottom: 100px; /* Further adjust distance from the bottom */
+                padding: 5px 10px; /* Further adjust padding */
+            }
+
+                .carousel-caption h3 {
+                    font-size: 12px; /* Further adjust font size */
+                }
+
+                .carousel-caption p {
+                    font-size: 10px; /* Further adjust font size */
+                }
+        }
+
+
+
+        .btn-inquire {
+            display: inline-block;
+            background-color: #ff5733;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+            .prev:hover, .next:hover {
+                background-color: rgba(0,0,0,0.8);
+            }
+
+        /* Dots at the bottom of the image */
+        .dot-container {
+            text-align: center;
+            position: absolute;
+            bottom: 20px; /* Position dots at the bottom of the image */
+            width: 100%;
+        }
+
+        .dot {
+            height: 12px;
+            width: 12px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364) !important;
+        }
+
+
+        .header {
+            background-color: #fff; /* Background color for header */
+            padding: 10px 0; /* Padding around the header */
+            text-align: center; /* Center-align text and elements */
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: center; /* Center the logo horizontally */
+            align-items: center; /* Center the logo vertically */
+            max-width: 100%; /* Ensure full-width container */
+            margin: auto; /* Center the container horizontally */
+        }
+
+        .logo img {
+            max-height: 100px; /* Set a maximum height for the logo */
+            width: auto; /* Maintain aspect ratio */
+        }
+
+        /* Responsive Design for Smaller Screens */
+        @media (max-width: 768px) {
+            .logo img {
+                max-height: 80px; /* Adjust logo height for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="/Images/pngtree.jpg" alt="Supreme Cars">
+            </div>
+        </div>
+    </header>
+
+
+    <main role="main" class="pb-3">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <p class="spacer"></p> <!-- Spacer element for additional spacing -->
+                <h1>
+                    EstateVolt
+                </h1>
+
+                <p>Real Estate Marketing!</p>
+            </div>
+        </section>
+
+        <!--Property Section -->
+        <section class="property-section">
+            <div class="container">
+                <h1>We Are Property People</h1>
+                <h3>
+                    We pride ourselves on a methodical and personalized approach that sets us apart in the realm of real estate social media marketing.
+                </h3>
+                <h3>
+                    Our strategy is rooted in understanding our clients, leveraging cutting-edge tools, and executing with precision to achieve outstanding results.
+                </h3>
+
+            </div>
+        </section>
+
+        <!-- Real Estate Web Section -->
+        <section class="real-estate-web">
+            <div class="container">
+                <h1>EstateVolt</h1>
+                <p>Real Estate Marketing.</p>
+            </div>
+        </section>
+
+
+        <!--What we do-->
+        <section class="what-we-do">
+            <div class="container">
+                <h2>What We Do</h2>
+                <div class="content">
+                    <div class="part">
+                        <img src='/Images/point1.png' alt="Part 1 Image">
+                        <h1>Comprehensive Client Analysis</h1>
+                        <p>We start with an analysis of your brand, audience, and online presence. By understanding your values and goals, we craft a strategy that connects with your ideal clients and sets you apart from competitors.</p>
+                    </div>
+                    <div class="part">
+                        <img src='/Images/point2.png' alt="Part 2 Image">
+                        <h1>Customized Strategy Development</h1>
+                        <p>Each real estate business is unique. We craft personalized content calendars, engagement strategies, and advertising plans tailored to your goals and audience, ensuring maximum impact.</p>
+                    </div>
+                    <div class="part">
+                        <img src='/Images/point3.png' alt="Part 3 Image">
+                        <h1>High-Quality Content Creation</h1>
+                        <p>Content is central to our approach. We create engaging visuals, copy, and multimedia to showcase your listings and brand, highlighting what makes your real estate offerings stand out.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Second Real Estate Web Section -->
+        <section class="real-estate-web second-real-estate-web">
+            <div class="container">
+                <h1>EstateVolt</h1>
+                <p>Your Vision, Our Expertise.</p>
+            </div>
+        </section>
+
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <div class="welcome-content">
+                <div class="welcome-text">
+                    
+                    <p>Thank you for visiting EstateVolt, your trusted partner in real estate marketing and advertising. We are passionate about helping real estate businesses thrive by delivering innovative and tailored solutions that drive results. Whether you’re looking to enhance your brand’s visibility, generate more leads, or create impactful marketing campaigns, EstateVolt is here to make it happen. Let us help you unlock the full potential of your business—because at EstateVolt, your success is our mission. Feel free to reach out to us using the contact details below, and let’s elevate your business together!</p>
+
+                </div>
+                <div class="welcome-image">
+                    <img src="/images/house1.jpg" alt="Car Showroom">
+                </div>
+            </div>
+        </section>
+
+       
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <img src="/images/logo3.png" alt="Supreme Cars Logo" class="footer-logo">
+            <p>&copy; 2024 EstateVolt. All rights reserved.</p>
+            <ul class="contact-info">
+                <li><i class="fas fa-phone"></i> <a href="tel:+085-2615134">085-2615134</a></li>
+                <li><i class="fas fa-envelope"></i> <a href="mailto:eirin@estatevolt.com">eirin@estatevolt.com</a></li>
+            </ul>
+            <ul class="social-media">
+                <li class="facebook"><a href="https://www.facebook.com/Supremecarsireland" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+
+                <li class="instagram"><a href="https://www.instagram.com/supremecarsireland" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="/js/slideshow.js"></script>
+</body>
+</html>
