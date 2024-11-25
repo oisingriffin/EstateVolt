@@ -843,71 +843,89 @@ header .container {
 }
 
 
-
 /* Real Estate Web Section Styling */
 .real-estate-web {
-    background: url('/Images/modernhome2.webp') no-repeat center top; /* Background image with top-aligned */
-    background-size: cover; /* Ensure the image covers the entire section */
-    height: 60vh; /* Adjusted height to 50% of the viewport height */
-    position: relative; /* To position text over the background */
-    overflow: hidden; /* Hide any part of the image that overflows */
+    position: relative;
+    height: 60vh; /* 60% of the viewport height */
+    overflow: hidden; /* Hide any overflow */
     display: flex;
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
-    text-align: center; /* Center the text */
-    font-family: 'Poppins', sans-serif; /* Use Poppins from Google Fonts */
+    text-align: center; /* Align text in the center */
+    color: #fff; /* White text for contrast */
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
 }
 
-    /* Title Styling */
-    .real-estate-web h1 {
-        font-size: 2.9rem; /* Adjusted font size to fit the smaller section */
-        color: #fff; /* White text for contrast */
-        margin-bottom: 15px;
-    }
-
-    /* Paragraph Styling */
-    .real-estate-web p {
-        font-size: 1.4rem;
-        color: #fff; /* White text for contrast */
-        max-width: 600px; /* Limit the paragraph width */
-        margin: 0 auto;
-    }
-
-/* Parallax Effect */
-.real-estate-web {
-    background-attachment: fixed; /* Create the parallax effect */
-}
-
-
-/* Second Real Estate Web Section */
-.second-real-estate-web {
-    background: url('/Images/modernhome4.jpg') no-repeat center top;
+/* Background Styling with Parallax Effect */
+.real-estate-web::before {
+    content: ''; /* Empty pseudo-element for background */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%; /* Extend height for parallax effect */
+    background: url('/Images/modernhome2.webp') no-repeat center top;
     background-size: cover; /* Ensure the image covers the entire section */
-    height: 60vh; /* Adjusted height to 50% of the viewport height */
-    position: relative; /* To position text over the background */
-    overflow: hidden; /* Hide any part of the image that overflows */
-    display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    text-align: center; /* Center the text */
-    font-family: 'Poppins', sans-serif; /* Use Poppins from Google Fonts */
+    z-index: -1; /* Place behind the content */
+    transform: translateY(-50%); /* Simulate the parallax effect */
+    will-change: transform; /* Optimize for smooth animations */
 }
-
 
 /* Title Styling */
-.second-real-estate-web h1{
-    font-size: 2.9rem; /* Adjusted font size to fit the smaller section */
+.real-estate-web h1 {
+    font-size: 2.9rem; /* Adjusted font size to fit the section */
+    margin-bottom: 15px; /* Add spacing below the title */
+}
+
+/* Paragraph Styling */
+.real-estate-web p {
+    font-size: 1.4rem; /* Adjusted font size for readability */
+    max-width: 600px; /* Limit paragraph width for better layout */
+    margin: 0 auto; /* Center-align the paragraph */
+}
+
+/* Second Real Estate Web Section Styling */
+.second-real-estate-web {
+    position: relative;
+    height: 60vh; /* 60% of the viewport height */
+    overflow: hidden; /* Hide any overflow */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Align text in the center */
     color: #fff; /* White text for contrast */
-    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+}
+
+/* Background Styling with Parallax Effect */
+.second-real-estate-web::before {
+    content: ''; /* Empty pseudo-element for background */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%; /* Extend height for parallax effect */
+    background: url('/Images/modernhome4.jpg') no-repeat center top;
+    background-size: cover; /* Ensure the image covers the entire section */
+    z-index: -1; /* Place behind the content */
+    transform: translateY(-50%); /* Simulate the parallax effect */
+    will-change: transform; /* Optimize for smooth animations */
+}
+
+/* Title Styling */
+.second-real-estate-web h1 {
+    font-size: 2.9rem; /* Adjusted font size to fit the section */
+    margin-bottom: 15px; /* Add spacing below the title */
 }
 
 /* Paragraph Styling */
 .second-real-estate-web p {
-    font-size: 1.4rem;
-    color: #fff; /* White text for contrast */
-    max-width: 600px; /* Limit the paragraph width */
-    margin: 0 auto;
+    font-size: 1.4rem; /* Adjusted font size for readability */
+    max-width: 600px; /* Limit paragraph width for better layout */
+    margin: 0 auto; /* Center-align the paragraph */
 }
+
+
 
 /* Parallax Effect */
 .second-real-estate-web {
